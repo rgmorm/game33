@@ -1,0 +1,737 @@
+{
+	"name": "Список событий 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 849438167532814,
+					"parameters": {
+						"object": "Coin"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Coin",
+					"sid": 106186880877062
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Текст",
+					"sid": 534926348453552,
+					"parameters": {
+						"instance-variable": "СчётчикМонет",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Текст",
+					"sid": 249448086434209,
+					"parameters": {
+						"text": "Текст.СчётчикМонет"
+					}
+				}
+			],
+			"sid": 727610266750148
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Spike",
+					"sid": 801262214512913,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "ТайловыйФон",
+					"sid": 419814226837421,
+					"parameters": {
+						"instance-variable": "Жизни",
+						"value": "-1"
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "ТайловыйФон",
+					"sid": 384356047400032,
+					"parameters": {
+						"width": "ТайловыйФон.Width-37"
+					}
+				}
+			],
+			"sid": 456830597078016
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 234522403343361,
+					"parameters": {
+						"object": "Heal"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Player",
+					"sid": 591016241269471,
+					"parameters": {
+						"width": "120",
+						"height": "200"
+					}
+				}
+			],
+			"sid": 484317322214307
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 575510693730197,
+					"parameters": {
+						"object": "Heal"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Heal",
+					"sid": 123845292565924
+				}
+			],
+			"sid": 838803228886640
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "ТайловыйФон",
+					"sid": 484625833071723,
+					"parameters": {
+						"instance-variable": "Жизни",
+						"comparison": 3,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Player",
+					"sid": 828738021670789
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 416984302638957,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 433319372956188
+				}
+			],
+			"sid": 390040356446655
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 802697105986089,
+					"parameters": {
+						"object": "oneshotspike"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "ТайловыйФон",
+					"sid": 208990446661401,
+					"parameters": {
+						"instance-variable": "Жизни",
+						"value": "-3"
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "ТайловыйФон",
+					"sid": 811924695983894,
+					"parameters": {
+						"width": "ТайловыйФон.Width=0"
+					}
+				}
+			],
+			"sid": 770650592062214
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 852394277127842,
+					"parameters": {
+						"object": "Heart"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "ТайловыйФон",
+					"sid": 988323495755003,
+					"parameters": {
+						"instance-variable": "Жизни",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "ТайловыйФон",
+					"sid": 988693005978743,
+					"parameters": {
+						"width": "ТайловыйФон.Width+37"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Heart",
+					"sid": 618955035853461
+				}
+			],
+			"sid": 511206726212857
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 110471868763396
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 586487041136546,
+					"parameters": {
+						"object": "босс"
+					}
+				},
+				{
+					"id": "is-flashing",
+					"objectClass": "Player",
+					"sid": 746537735139130,
+					"behaviorType": "Мигание",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "flash",
+					"objectClass": "Player",
+					"sid": 257114322415712,
+					"behaviorType": "Мигание",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "2.0"
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "ТайловыйФон",
+					"sid": 677241240193001,
+					"parameters": {
+						"width": "ТайловыйФон.Width-37"
+					}
+				}
+			],
+			"sid": 501322447724793
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-width",
+					"objectClass": "ТайловыйФон",
+					"sid": 157501504367829,
+					"parameters": {
+						"comparison": 3,
+						"width": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 394558505810159
+				}
+			],
+			"sid": 544678463714910
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 746095263795012,
+					"parameters": {
+						"first-value": "Player.X",
+						"comparison": 2,
+						"second-value": "Хог.X"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Хог",
+					"sid": 724858241601820,
+					"behaviorType": "Платформер",
+					"parameters": {
+						"control": "left"
+					}
+				}
+			],
+			"sid": 505222729700735
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 452900947490759,
+					"parameters": {
+						"first-value": "Player.X",
+						"comparison": 4,
+						"second-value": "Хог.X"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Хог",
+					"sid": 826219668901309,
+					"behaviorType": "Платформер",
+					"parameters": {
+						"control": "right"
+					}
+				}
+			],
+			"sid": 261039391961361
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PortalPNGImageHD",
+					"sid": 192957592517765,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 381466818293689,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 650641515416816
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 289354158561104,
+					"parameters": {
+						"object": "Хог"
+					}
+				},
+				{
+					"id": "is-flashing",
+					"objectClass": "Player",
+					"sid": 582152938631655,
+					"behaviorType": "Мигание",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "flash",
+					"objectClass": "Player",
+					"sid": 304175840943407,
+					"behaviorType": "Мигание",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "2.0"
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "ТайловыйФон",
+					"sid": 669295997071876,
+					"parameters": {
+						"width": "ТайловыйФон.Width-37"
+					}
+				}
+			],
+			"sid": 836744121509973
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-moved",
+					"objectClass": "Player",
+					"sid": 766187197156886,
+					"behaviorType": "Платформер"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 949544202516551,
+					"parameters": {
+						"animation": "\"ходьба\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 389912617816345
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-stopped",
+					"objectClass": "Player",
+					"sid": 885273392869729,
+					"behaviorType": "Платформер"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 957587582113085,
+					"parameters": {
+						"animation": "\"стоит\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 247829828658436
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-jump",
+					"objectClass": "Player",
+					"sid": 722989678489222,
+					"behaviorType": "Платформер"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 791159287150620,
+					"parameters": {
+						"animation": "\"прыжок\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 513327007238517
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-landed",
+					"objectClass": "Player",
+					"sid": 444301423580806,
+					"behaviorType": "Платформер"
+				},
+				{
+					"id": "is-moving",
+					"objectClass": "Player",
+					"sid": 554119489843756,
+					"behaviorType": "Платформер",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 760832312533897,
+					"parameters": {
+						"animation": "\"стоит\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 410873623518689
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-landed",
+					"objectClass": "Player",
+					"sid": 986630134348043,
+					"behaviorType": "Платформер"
+				},
+				{
+					"id": "is-moving",
+					"objectClass": "Player",
+					"sid": 145137155376520,
+					"behaviorType": "Платформер"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 998367422916533,
+					"parameters": {
+						"animation": "\"ходить\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 668836932839742
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Клавиатура",
+					"sid": 950458564688264,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "is-mirrored",
+					"objectClass": "Player",
+					"sid": 290703458579182,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Player",
+					"sid": 161196767347732,
+					"parameters": {
+						"object": "пуля",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 902838486576460
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Клавиатура",
+					"sid": 275936629905909,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "is-mirrored",
+					"objectClass": "Player",
+					"sid": 247732293622082
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Player",
+					"sid": 384242019257819,
+					"parameters": {
+						"object": "пуляЛево",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "пуляЛево",
+					"sid": 624435116199713,
+					"parameters": {
+						"angle": "180"
+					}
+				}
+			],
+			"sid": 100565530406336
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Клавиатура",
+					"sid": 929351189127591,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player",
+					"sid": 970068645603746,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 299869231829713
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Клавиатура",
+					"sid": 998533227250007,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player",
+					"sid": 643226162250548,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 302419539475308
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "пуля",
+					"sid": 856777109225787,
+					"parameters": {
+						"object": "Spike"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "пуля",
+					"sid": 659146255740980
+				}
+			],
+			"sid": 178195689009439
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "пуляЛево",
+					"sid": 253672657041569,
+					"parameters": {
+						"object": "Spike"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "пуляЛево",
+					"sid": 317845478865122
+				}
+			],
+			"sid": 557803731787273
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Хог",
+					"sid": 467058922310246,
+					"parameters": {
+						"object": "пуля"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Хог",
+					"sid": 483922944340744
+				},
+				{
+					"id": "destroy",
+					"objectClass": "пуля",
+					"sid": 497675376605687
+				}
+			],
+			"sid": 410915189859483
+		}
+	],
+	"sid": 287399447975837
+}

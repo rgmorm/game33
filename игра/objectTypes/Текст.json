@@ -1,0 +1,23 @@
+{
+	"name": "Текст",
+	"plugin-id": "Text",
+	"sid": 313364651196820,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "СчётчикМонет",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 750972307817651
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Якорь",
+			"sid": 348465092827019
+		}
+	],
+	"effectTypes": []
+}

@@ -1,0 +1,55 @@
+{
+	"name": "Heal",
+	"plugin-id": "Sprite",
+	"sid": 570670321247497,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Rotate",
+			"name": "Поворот",
+			"sid": 328833471162017
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 880,
+						"height": 1117,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2628471,
+						"collisionPoly": {
+							"points": [
+								0.35909090909090874,
+								0.03581020590868397,
+								0.6272727272727283,
+								0.03939122649955237,
+								0.8954545454545457,
+								0.9498657117278424,
+								0.06363636363636364,
+								0.9498657117278424
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 567751828771592,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

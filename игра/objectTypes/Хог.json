@@ -1,0 +1,55 @@
+{
+	"name": "Хог",
+	"plugin-id": "Sprite",
+	"sid": 971863591116277,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Платформер",
+			"sid": 796463893387676
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 615,
+						"height": 875,
+						"originX": 0.5349593495934959,
+						"originY": 0.5462857142857143,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2477029,
+						"collisionPoly": {
+							"points": [
+								0.8926829268292658,
+								1,
+								0,
+								0.8114285714285706,
+								0.31707317073170804,
+								0,
+								1,
+								0.025142857142857047
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 105699771489495,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

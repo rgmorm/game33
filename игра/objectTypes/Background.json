@@ -1,0 +1,52 @@
+{
+	"name": "Background",
+	"plugin-id": "Sprite",
+	"sid": 894195929153338,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Жизни",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 615106559830535
+		},
+		{
+			"name": "Жизнии",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 844011010193133
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1200,
+						"height": 675,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4157706,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 953643937123881,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

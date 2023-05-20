@@ -1,0 +1,34 @@
+{
+	"name": "ТайловыйФон",
+	"plugin-id": "TiledBg",
+	"sid": 570633339025237,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Жизни",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 736446475898084
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Якорь",
+			"sid": 796617397994877
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 37,
+		"height": 37,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 9951999,
+		"useCollisionPoly": true
+	}
+}
